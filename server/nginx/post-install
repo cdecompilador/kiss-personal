@@ -2,6 +2,7 @@
 
 # Install config with default http server to new location (since 1.18.0-r13).
 if ! [ -e /etc/nginx/http.d/default.conf ]; then
+    mkdir -p /etc/nginx/http.d
     install -m644 /usr/share/nginx/http-default_server.conf \
         /etc/nginx/http.d/default.conf
 fi

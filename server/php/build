@@ -9,7 +9,10 @@ export INSTALL_ROOT="$1"
     --datadir=/usr/share/php \
     --mandir=/usr/share/man \
     --with-config-file-path=/etc \
-    --with-config-file-scan-dir=/etc/php/conf.d
+    --with-config-file-scan-dir=/etc/php/conf.d \
+    --enable-fastcgi \
+    --enable-discard-path \
+    --enable-force-cgi-redirect
 
 make
 make install

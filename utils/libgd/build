@@ -1,0 +1,9 @@
+#!/bin/sh -e
+
+autoconf
+
+./configure \
+	--prefix=/usr
+
+make
+make install
